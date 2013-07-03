@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" type="text/css" href="../css/micss.css">
+        <title>Registro de Eventos</title>
+        <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="../css/flat-ui.css" rel="stylesheet">
+     <link href="../css/micss.css" rel="stylesheet">
+    </head>
+    <BODY>
+    
+        <h1>Eventos</h1>
+           <br>
+        <div class="span3 demo-pager">
+            <ul class="pager">
+                <li class="previous">
+                    <a href="index.html">
+                        <i class="fui-arrow-left"></i>
+                        <span>Menu</span>
+                    </a>
+                </li>
+            </ul> <!-- /pager -->
+        </div>
+        <br>
+        <br>
+
+         <form action="" method="post">
+             <b><label for= "nombre_evento">Nombre</label></b>
+        <input id="nombre_evento" class="cajastexto"
+	type="text" name="nombre_evento"
+	value="" size="20" maxlength="30" required="required"/>
+        <br>
+        <br>
+        <u><label for= "contacto">Contacto</label></u> <br>
+        <textarea rows="4" cols="40" id="contacto" class="cajastexto"></textarea>
+        <br>
+        <i><label for= "cuando">Cuando</label></i> <br>
+        <textarea rows="4" cols="40" id="cuando" class="cajastexto"></textarea>
+        <br>
+         <label for= "donde">Donde</label> <br>
+         <textarea rows="4" cols="40" id="donde" class="cajastexto"></textarea>
+        <br>
+        <br>
+        <label for= "informacion">Informacion</label>
+        <textarea rows="4" cols="40" id="informacion" class="cajastexto" required="required"></textarea>
+        <br>
+        <br>
+        <label for= "fecha_inicio">Fecha inicio</label>
+        <input id="fecha_inicio" 
+	type="date" name="fecha_inicio"
+	required="required"/>
+        <br>
+        <br>
+         <label for= "fecha_fin">Fecha fin</label>
+        <input id="fecha_fin" 
+	type="date" name="fecha_fin"
+	required="required"/>
+        <br>
+        <br>
+         <input class="btn" type="submit" name="registrar" value="Registrar"/>      
+        
+        
+         </form>
+    </body>
+   
+</html>
+    
