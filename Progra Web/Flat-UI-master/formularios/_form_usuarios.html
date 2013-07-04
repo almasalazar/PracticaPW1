@@ -9,78 +9,80 @@
         <link href="../css/flat-ui.css" rel="stylesheet">
         <link href="../css/micss.css" rel="stylesheet">
     </head>
-
-    <BODY>  
-
-
-        <h1>Usuarios</h1> 
-        
+    <body>  
         <div class="span3 demo-pager">
-            <ul class="pager">
-                <li class="previous">
-                    <a href="index.html">
-                        <i class="fui-arrow-left"></i>
-                        <span>Menu</span>
-                    </a>
-                </li>
-            </ul> <!-- /pager -->
+            <h1>Usuarios</h1> 
+            <form action="" method="post">
+                <ul class="pager">
+                    <li class="previous">
+                        <a href="index.html">
+                            <i class="fui-arrow-left"></i>
+                            <span>Menu</span>
+                        </a>
+                    </li>
+                </ul> <!-- /pager -->
         </div>
         <br>
-        <br>
-        
-        <form action="" method="post">
-            <label for= "apellido_paterno">Apellido Paterno</label>
-            <input id="paterno" class="cajastexto"
-                   type="text" name="apellido_paterno"
-                   value="" size="20" maxlength="30" required="required"/> 
-            <br>
-            <br>
+        <div class="container-fluid">
+            <div class="row-fluid">
 
-            <label for="apellido_materno">Apellido Materno</label>
-            <input id="materno" class="cajastexto"
-                   type="text" name="apellido_materno"
-                   value="" size="20" maxlength="30" required="required"/>
-            <br>
-            <br>
-            <label for= "nombre">Nombre</label>
-            <input id="nombre" 
-                   type="text" name="nombre" class="cajastexto"
-                   value="" size="20" maxlength="30" required="required"/>
-            <br>
-            <br>
-            <label for= "genero" >Genero</label>
-            <br>
-            <input type="radio" name="genero" value="Femenino">Femenino <br>
-            <input type="radio" name="genero" value="Masculino">Masculino <br>
-            <br>
-            <label for= "edad">Edad</label>
-            <input id="edad" 
-                   type="number" name="edad"
-                   min="15" max="90" required="required"/>
-            <br>
-            <br>
-            <label for= "email">Email</label>
-            <input id="email" class="cajastexto"
-                   type="email" name="email"
-                   required="required"/>
-            <br>
-            <br>
-            <label for= "nctr_rfc">Rfc</label>
-            <input id="nctr_rfc" class="cajastexto"
-                   type="text" name="nctr_rfc"
-                   value="" size="13" maxlength="13" required="required"/>
-            <br>
-            <br>
-            <label for= "ncontrol">No. de Control</label>
-            <input id="ncontrol" class="cajastexto"
-                   type="text" name="ncontrol"
-                   value="" size="8" maxlength="8" required="required"/>
-            <br>
-            <br>
-            <input class="btn" type="submit" name="registrar" value="Registrar"/>
+                <div class="span6">
 
-        </form>
+                    <!--Sidebar content-->
+                </div>
+                <div class="span6">
+                    <label for="apellido_paterno">Apellido Paterno</label>
+                    <input id="apellido_paterno" class="cajastexto"
+                           type="text" name="apellido_paterno"
+                           value="" required="required"/> 
 
-    </body>
+
+                    <label for="apellido_materno">Apellido Materno</label>
+                    <input id="apellido_materno" class="cajastexto"
+                           type="text" name="apellido_materno"
+                           value=""  required="required"/>
+
+                    <label for= "nombre">Nombre</label>
+                    <input id="nombre" 
+                           type="text" name="nombre" class="cajastexto"
+                           value=""  required="required"/>
+
+                    <label for= "genero" >Genero</label>
+                    <br>
+                    <input type="radio" name="genero" value="Femenino">Femenino <br>
+                    <input type="radio" name="genero" value="Masculino">Masculino <br>
+                    <br>
+                    <label for= "edad">Edad</label>
+                    <input id="edad" 
+                           type="number" name="edad"
+                           min="15" max="90" required="required"/>
+                    <br>
+                    <br>
+                    <label for= "email">Email</label>
+                    <input id="email" class="cajastexto"
+                           type="email" name="email"
+                           required="required"/>
+                    <br>
+                    <br>
+                    <label for= "nctr_rfc">Rfc</label>
+                    <input id="nctr_rfc" class="cajastexto"
+                           type="text" name="nctr_rfc"
+                           value="" size="13" maxlength="13" required="required"/>
+
+                    <label for= "ncontrol">No. de Control</label>
+                    <input id="ncontrol" class="cajastexto"
+                           type="text" name="ncontrol"
+                           value="" size="8" maxlength="8" required="required"/>
+
+                    <div class="span3 offset5"> <input class="btn" type="submit" name="registrar" value="Registrar"/> </div>
+                    <div class="span9">  </div>
+                    <!--Body content-->
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+</body>
 
 </html>
